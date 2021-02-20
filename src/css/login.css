@@ -1,9 +1,34 @@
-*{
-    box-sizing:border-box;
+
+body{
+    overflow-x:hidden;
 }
-.loginpage{
-    height:100vh;
-    background-image: url('../images/login-bg.png');
+.login{
+    width: 100%;
+    height: 50vh;
     background-repeat: no-repeat;
-    position:absolute;
+}
+.login-head{
+    padding-bottom:3%;
+    font-size:28px;
+    color:#491895
+}
+.btn{
+    background-color: #491895;
+}
+#login-form{
+    padding: 20vh 5vw 0 8vw;
+}
+#logo{
+    zoom:0.8;
+    padding: 12% 0 0 10%
+}
+.login-footer{
+    background-image: url('../images/login_footer.png');
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: -30%;
+	z-index: 1;
 }

@@ -1,22 +1,30 @@
 
 body{
-    overflow-x:hidden;
+    overflow:hidden;
 }
 .login{
     width: 100%;
     height: 50vh;
+    background: url('../images/register-white-bg.png');
     background-repeat: no-repeat;
 }
 .login-head{
+    padding-left: 18%;
     padding-bottom:3%;
-    font-size:28px;
+    font-size:4.5rem;
     color:#491895
 }
-.btn{
+.btn-login{
     background-color: #491895;
 }
+.sign-up{
+    background-color: #491895;
+    color:white;
+    outline: none;
+}
 #login-form{
-    padding: 20vh 5vw 0 8vw;
+    padding: 20vh 2vw 0 8vw;
+    z-index:100;
 }
 #logo{
     zoom:0.8;
@@ -30,5 +38,8 @@ body{
 	height: 100%;
 	left: 0px;
 	top: -30%;
-	z-index: 1;
+    z-index:1;
+}
+#signup-link{
+    z-index:100;
 }

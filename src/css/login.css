@@ -7,6 +7,7 @@ body{
     height: 50vh;
     background: url('../images/register-white-bg.png');
     background-repeat: no-repeat;
+    z-index:100;
 }
 .login-head{
     padding-left: 18%;
@@ -16,6 +17,9 @@ body{
 }
 .btn-login{
     background-color: #491895;
+    margin-left: 21%;
+    font-size: 18px;
+    outline: none;
 }
 .sign-up{
     background-color: #491895;
@@ -39,7 +43,4 @@ body{
 	left: 0px;
 	top: -30%;
     z-index:1;
-}
-#signup-link{
-    z-index:100;
 }

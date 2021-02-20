@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Voting Dapp | Sign_Up</title>
+		<link href="css/sign_up.css" rel="stylesheet" />
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="sign_up">
+			<div class="container row">
+				<div class="col-md-6 register">
+					<h1 class="text-center" style="color: #491895;">Sign Up</h1>
+					<form>
+						<div class="form-group row mt-5">
+							<label for="sign_up_firstName" class="col-sm-4 col-form-label"
+								>First Name :</label
+							>
+							<div class="col-sm-8">
+								<input
+									type="text"
+									class="form-control"
+									id="sign_up_firstName"
+									placeholder="First Name"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="sign_up_lastName" class="col-sm-4 col-form-label"
+								>Last Name :</label
+							>
+							<div class="col-sm-8">
+								<input
+									type="text"
+									class="form-control"
+									id="sign_up_lastName"
+									placeholder="Last Name"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="sign_up_DOB" class="col-sm-4 col-form-label"
+								>Date of Birth :</label
+							>
+							<div class="col-sm-8">
+								<input
+									type="date"
+									class="form-control"
+									id="sign_up_lDOB"
+									placeholder="01-01-1996"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="sign_up_email" class="col-sm-4 col-form-label"
+								>Email</label
+							>
+							<div class="col-sm-8">
+								<input
+									type="email"
+									class="form-control"
+									id="sign_up_email"
+									placeholder="Email"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="sign_up_password" class="col-sm-4 col-form-label"
+								>Password</label
+							>
+							<div class="col-sm-8">
+								<input
+									type="password"
+									class="form-control"
+									id="sign_up_password"
+									placeholder="Password"
+								/>
+							</div>
+						</div>
+						<fieldset class="form-group">
+							<div class="row">
+								<legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+								<div class="col-sm-8">
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="gridRadios"
+											id="sign_up_male"
+											value="option1"
+											checked
+										/>
+										<label class="form-check-label" for="sign_up_male">
+											Male
+										</label>
+									</div>
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="gridRadios"
+											id="sign_up_female"
+											value="option2"
+										/>
+										<label class="form-check-label" for="sign_up_female">
+											Female
+										</label>
+									</div>
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="gridRadios"
+											id="sign_up_other"
+											value="option3"
+										/>
+										<label class="form-check-label" for="sign_up_other" style="color: #ffffff;">
+											Others
+										</label>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="form-group row">
+							<div class="col-sm-4" style="color: #ffffff;">Address</div>
+							<div class="col-sm-8">
+								<div class="form-row">
+									<div class="col-7">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="City"
+										/>
+									</div>
+									<div class="col">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="State"
+										/>
+									</div>
+									<div class="col">
+										<input type="text" class="form-control" placeholder="Zip" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn mt-5">Sign up</button>
+					</form>
+				</div>
+				<div class="col-md-6 logo">
+					<img src="./images/logo.png" />
+				</div>
+			</div>
+            <div class="footer"></div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

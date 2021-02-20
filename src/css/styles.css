@@ -1,8 +1,6 @@
-html {
-	overflow-x: hidden;
-}
 body {
 	background: 100% 100%;
+	overflow: hidden;
 }
 .Homepage {
 	/* background-image: url('../images/Voting-homepage.jpeg');
@@ -17,7 +15,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	position: absolute;
 }
 .logo {
@@ -33,16 +31,17 @@ body {
 	width: 100%;
 	height: 100%;
 	left: 0px;
-	top: -10%;
+	top: -20%;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .btn{
     position: relative;
     left: 35%;
     top: 75%;
-    border-radius: 20px !important;
+    border-radius: 15px !important;
     padding:1% 5% !important;
     margin-left: 10%;
+	margin-top:-22%;
     color: #491895;
     font-size: 24px !important;
     font-weight: 800 !important;

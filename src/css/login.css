@@ -1,0 +1,9 @@
+*{
+    box-sizing:border-box;
+}
+.loginpage{
+    height:100vh;
+    background-image: url('../images/login-bg.png');
+    background-repeat: no-repeat;
+    position:absolute;
+}

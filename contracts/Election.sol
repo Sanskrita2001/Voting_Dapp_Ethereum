@@ -24,8 +24,16 @@ contract Election{
 
     //constructor
     constructor  () public{
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
+        addCandidate("Justin Trudeau");
+        addCandidate("Emmanuel Macron");
+        addCandidate("Frank-Walter Steinmeir");
+        addCandidate("Jacinda Ardern");
+        addCandidate("Cyril Ramaphose");
+        addCandidate("Carlos Alvarado Quesada");
+        addCandidate("Jair Bolsonaro");
+        addCandidate("Alberto Fermamdez");
+        addCandidate("Yoshihide Suga");
+        addCandidate("Mario Abdo Benitez");
     }
     function addCandidate (string memory _name) private {
         candidatesCount ++;

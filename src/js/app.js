@@ -120,6 +120,8 @@ App = {
 				}
 				loader.hide();
 				content.show();
+				// var result_title = document.getElementById("title1");
+				document.getElementById('title').innerHTML = "result_title.innerHTML";
 			})
 			.catch(function (error) {
 				console.warn(error);

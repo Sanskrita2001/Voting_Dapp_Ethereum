@@ -1,0 +1,24 @@
+body {
+	background: url('../images/election-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	/* width: 100%;
+	height: 90vh; */
+	/* position: absolute;  */
+}
+.btn {
+	position: relative;
+	left: 35%;
+	top: 9vh;
+	border-radius: 15px !important;
+	padding: 1% 5% !important;
+	margin-left: 10%;
+	margin-top: -22%;
+	background-color: #ffffff !important;
+	color: #491895 !important;
+	font-size: 24px !important;
+	font-weight: 800 !important;
+}

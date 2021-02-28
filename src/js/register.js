@@ -1,29 +1,37 @@
-const fetch = require('cross-fetch')
+const butt = document.getElementById('sign_up_button');
+butt.addEventListener('click', (e) => {
+	e.preventDefault();
+	gender = document.querySelector('input[name = gridRadios]:checked').value;
+	const alertBox = document.getElementById('alert-box');
+	const result = {
+		name: document.getElementById('sign_up_Name').value,
+		email: document.getElementById('sign_up_email').value,
+		password: document.getElementById('sign_up_password').value,
+		gender: 'male',
+		voterNo: document.getElementById('sign_up_VoterId').value,
+		aadharNumber: document.getElementById('sign_up_AadharId').value,
+		address: document.getElementById('sign_up_Address').value,
+		dateOfBirth: document.getElementById('sign_up_DOB').value,
+		phoneNumber: document.getElementById('sign_up_phone').value,
+	};
+	console.log(result);
+	console.log(result.name);
 
+	register(result).then((data) => {
+		console.log(data);
+		alertBox.classList.remove('hidden');
+		alertBox.firstElementChild.innerText = `Successfully Signed in as ${data.name}`;
+	});
+});
 
-
-async function register(data = {}){
-    const res = await fetch('http://localhost:5000/api/users', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    return res.json()
+async function register(data) {
+	const res = await fetch('http://localhost:5000/api/users', {
+		method: 'POST',
+		mode: 'no-cors',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(data),
+	});
+	return res.json();
 }
-
-register({
-    "name": "Sanwreskrita Useless",
-    "email": "uselrweess@useless.com",
-    "password": "12345",
-    "gender": "Male",
-    "voterNo": "46615dfs894963",
-    "aadharNumber": "7248916691944",
-    "address": " Flat j6/3, Purba Abasan, 1582/1 Rajdanga main road Kolkata-700107",
-    "dateOfBirth": 978652800000,
-    "phoneNumber": 9876768909
-}).then(data => {
-    console.log(data)
-})
